@@ -1,0 +1,64 @@
+<div id="sidebar-container" class="{{true? 'sidebar-expanded' : 'sidebar-collapsed'}} d-md-block">
+    <ul class="list-group">
+     
+     
+       
+  
+        <a href="#1" data-toggle="collapse"
+          aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start"
+          title="Menu1">
+          <div
+            class="d-flex w-100 {{true ? 'justify-content-start' : 'justify-content-center'}} align-items-center">
+            <span class="iconSpacing {{true? 'pr-2' : ''}}">
+              <fa-icon 
+                title="Menu1"></fa-icon>
+            </span>
+            <span class="menu-collapsed {{true? '' : 'd-none'}}">Menu1</span>
+            <span class="submenu-icon ml-auto {{true ? '' : 'd-none'}}"></span>
+          </div>
+        </a>
+        <a href="#2" data-toggle="collapse"
+        aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start"
+        title="Menu2">
+        <div
+          class="d-flex w-100 {{true ? 'justify-content-start' : 'justify-content-center'}} align-items-center">
+          <span class="iconSpacing {{true? 'pr-2' : ''}}">
+            <fa-icon  size="1x"
+              title="Menu2"></fa-icon>
+          </span>
+          <span class="menu-collapsed {{true? '' : 'd-none'}}">Menu2</span>
+          <span class="submenu-icon ml-auto {{true ? '' : 'd-none'}}"></span>
+        </div>
+      </a>
+       
+        <!-- <ul class="dropdown-menu dropdown-menu-left" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+            <li *ngFor="let subMenu of menu.subMenus" class="border-bottom">
+              <a href="#!" class="submenu-item" title={{subMenu.name}}>
+                <i class="#"></i> {{subMenu.name}}
+              </a>
+            </li>
+          </ul> -->
+  
+       <!-- <div *ngIf="menu.parent" id="{{menu.menuId}}"
+          class="collapse sidebar-submenu {{this.sideBarExpanded ? '' : 'd-none'}}">
+          <ng-container *ngFor="let subMenu of menu.subMenus">
+            <a *ngIf="subMenu.show" [routerLink]="subMenu.templateUrl" [queryParams]="{menuId: subMenu.menuId}"
+              class="list-group-item list-group-item-action bg-secondary text-white" title="{{subMenu.name}}">
+              <div
+                class="d-flex w-100 {{this.sideBarExpanded ? 'justify-content-start' : 'justify-content-center'}} align-items-center">
+                <span class="iconSpacing {{this.sideBarExpanded ? 'pr-2' : ''}}">
+                  <fa-icon *ngIf="menu.iconName !== null && menu.iconName !== undefined" icon='{{subMenu.iconName}}'
+                    size="1x" title="{{subMenu.name}}"></fa-icon>
+                </span>
+                <div class="menu-collapsed">{{subMenu.name}}</div>
+              </div>
+            </a>
+          </ng-container>
+        </div>-->
+      
+  
+      <!-- UI Version -->
+      
+       
+    </ul>
+  </div>

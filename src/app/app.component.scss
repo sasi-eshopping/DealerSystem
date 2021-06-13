@@ -1,0 +1,44 @@
+.content {
+    height: calc(100vh - 5.6rem);
+}
+
+.wrapper{  
+    display: flex;
+}
+
+.sideBar{
+    flex: 0 0 15%;
+}
+
+.mainContent{
+    flex: 1;
+    width: 10%;
+}
+
+.sideBar.sideBarCollapsed{
+    flex: 0 0 4%
+}
+
+.mainContent.sideBarCollapsed{
+    width: 96%;
+}
+
+::ng-deep
+{
+    .icons 
+    {
+        font-size: 20px;
+    }
+
+    .blur-background
+    {
+        filter: blur(3px);
+    }
+}
+.footer
+{
+position:fixed;
+bottom:0px;
+background-color:pink;
+width:100%;
+}
