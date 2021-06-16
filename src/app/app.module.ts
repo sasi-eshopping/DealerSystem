@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AvatarModule } from 'ngx-avatar';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -26,8 +28,10 @@ import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontaweso
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
     CommonModule,
     NgbModule,
     FontAwesomeModule

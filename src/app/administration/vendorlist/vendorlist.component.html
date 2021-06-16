@@ -5,4 +5,34 @@
       Refresh
     </button>
   </p>
-  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-striped table-bordered" cellspacing="0" width="100%"></table>
+ 
+  <select #val (change)="changPage(val.value)">
+    
+    <option value='{{page}}' *ngFor='let page of this.pages'>{{page}}</option>
+   
+  </select>
+
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-striped table-bordered" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th>vendor Id</th>
+      <th>vendor name</th>
+      <th>Address</th>
+      <th>Site Code</th>
+      <th>Last update</th>
+      <th>Updated By</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of persons">
+      <td>{{ person.vendorId }}</td>
+      <td>{{ person.vendorName }}</td>
+      <td>{{ person.vendorAddress }}</td>
+      <td>{{ person.vendorSiteCode }}</td>
+      <td>{{ person.lastUpdate }}</td>
+      <td>{{ person.updatedBy }}</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
