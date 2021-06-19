@@ -89,7 +89,7 @@ export class VendorlistComponent implements OnInit {
   
   showtableData()
   {
-    this.service.getAPI('tewst').subscribe(data=>{
+    this.service.getAPI('assets/data.json').subscribe(data=>{
      this.persons=data.body;
       console.log('response',this.persons);
      
