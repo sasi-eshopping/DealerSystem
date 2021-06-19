@@ -14,7 +14,7 @@ export class AdminserviceService {
   var httpHeaders = new HttpHeaders({
       
     });
-      return this.http.get('assets/data.json', { headers: httpHeaders, params: params, observe: 'response' })
+      return this.http.get(url, { headers: httpHeaders, params: params, observe: 'response' })
         .pipe(map((response: any) => response),
           // retry(1),
           catchError((err) => this.handleError(err)));
